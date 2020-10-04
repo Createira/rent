@@ -112,6 +112,23 @@ ul {
 }
 
 @media (max-width: 480px) {
+    .intro {
+        margin: 0 auto;
+    }
+    .intro__inner {
+        margin-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .intro__inner img {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+    }
+
     .container {
         columns: 1;
     }
