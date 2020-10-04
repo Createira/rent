@@ -79,13 +79,13 @@ ul {
 .container .box h2 {
     margin: 10px 0 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .container .box p {
     margin: 0;
     padding: 0 0 10px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 @media (max-width: 1400px) {
