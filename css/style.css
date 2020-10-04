@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-size: 15px;
+    color: #333;
+    background-color: grey;
+}
+  
+html, body { 
+    overflow-x:hidden; 
+}
+  
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Intro */ 
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: url(../image/background.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.intro__inner {
+    width: 100%;
+    height: 100vh;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro__item {
+    padding: 25px;
+    opacity: .8;
+}
+
+.intro__item:hover {
+    transform: translate3d(10%, -5%, 0);
+    transition: .5s;
+    opacity: 1;
+}
+
+/*============= Album1  ==============*/
+/* Nav */
+.nav {
+    width: 25%;
+    height: 100%;
+    padding-left: 20px;
+
+    border: 5px dashed #ffffff;
+}
+
+.nav-title {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.nav-title--main {
+    margin: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.nav-list {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: black;
+}
+
+.inro {
+    width: 100%;
+    background-color: #fff;
+}
+
+.intro__inner {
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 1800px;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 40px;
+}
+
+.container .box {
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    overflow: hidden;
+    break-inside: avoid;
+}
+
+.container .box img {
+    max-width: 100%;
+   
+}
+
+.container .box h2 {
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.container .box p {
+    margin: 0;
+    padding: 0 0 10px;
+    font-size: 16px;
+}
+
+@media (max-width: 1400px) {
+    .container {
+        columns: 3;
+        width: calc(100% - 40px);
+        box-sizing: border-box;
+        padding: 20px 20px 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        columns: 2;
+    }
+
+    .container .box h2 {
+        font-size: 16px;
+    }
+
+    .container .box p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        columns: 1;
+    }
+
+    .container .box h2 {
+        font-size: 12px;
+    }
+
+    .container .box p {
+        font-size: 10px;
+    }
+}
+
+
